@@ -157,8 +157,6 @@ void quickSort(int arr[], int low, int high)
         quickSort(arr, piv + 1, high);
     }
 }
-
-// ✅ New function
 bool isSorted(int arr[], int n)
 {
     for (int i = 1; i < n; i++)
@@ -174,7 +172,7 @@ bool isSorted(int arr[], int n)
 int binarySearch(int arr[], int n, int key)
 {
     int left = 0, right = n - 1;
-    while (left <= right) // ✅ fixed here
+    while (left <= right) 
     {
         int mid = (left + right) / 2;
         if (arr[mid] == key)
